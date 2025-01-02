@@ -40,7 +40,7 @@ const ProductDetailsPage: React.FC = () => {
 
   return (
     <div className="p-6 max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-      <img src={product.image} alt={product.title} className="w-full h-auto object-cover rounded" />
+      <img src={product.image} alt={product.title} className="border rounded shadow-lg w-full h-auto object-cover rounded" />
       <div>
         <h1 className="text-3xl font-bold mb-4">{product.title}</h1>
         <p className="text-xl text-gray-700 mb-4">${product.price.toFixed(2)}</p>
