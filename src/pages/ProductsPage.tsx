@@ -49,7 +49,7 @@ const ProductsPage: React.FC = () => {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {filteredProducts.map(product => (
-          <div key={product.id} className="border rounded shadow-lg p-4 hover:shadow-xl">
+          <div key={product.id} className="border rounded shadow-lg p-4 hover:shadow-xl hover:shadow-2xl hover:scale-105 transition-transform">
             <img src={product.image} alt={product.title} className="h-48 w-full object-cover mb-2" />
             <h2 className="text-lg font-semibold mb-1">{product.title}</h2>
             <p className="text-sm text-gray-600 mb-1">${product.price.toFixed(2)}</p>
